@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#86efac"/>
+    </linearGradient>
+  </defs>
+  <rect width="192" height="192" rx="40" fill="url(#grad)"/>
+  <!-- Wallet Body -->
+  <path d="M46 68 C46 58 54 50 64 50 H128 C138 50 146 58 146 68 V124 C146 134 138 142 128 142 H64 C54 142 46 134 46 124 V68 Z" fill="white"/>
+  <!-- Wallet Flap/Detail -->
+  <path d="M120 85 H146 V105 H120 C115 105 111 101 111 95 C111 89 115 85 120 85 Z" fill="#e2e8f0"/>
+  <!-- Upward Graph -->
+  <polyline points="65 110, 85 90, 105 100, 125 75" fill="none" stroke="#16a34a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="125" cy="75" r="3" fill="#16a34a"/>
+</svg>
