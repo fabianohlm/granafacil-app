@@ -1,10 +1,11 @@
+
 {
   "name": "GranaFácil - Controle de Gastos",
   "short_name": "GranaFácil",
-  "start_url": ".",
+  "start_url": "./",
   "display": "standalone",
-  "background_color": "#f1f5f9",
-  "theme_color": "#16a34a",
+  "background_color": "#F1F5F9",
+  "theme_color": "#16A34A",
   "orientation": "portrait",
   "icons": [
     {

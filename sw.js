@@ -1,5 +1,5 @@
 
-const CACHE_NAME = 'financas-v1';
+const CACHE_NAME = 'financas-v2';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
@@ -64,6 +64,7 @@ self.addEventListener('fetch', (event) => {
           }
 
           // Clone response to store in cache
+          // This ensures external dependencies (like CDN scripts) are cached for offline use
           const responseToCache = response.clone();
           caches.open(CACHE_NAME).then((cache) => {
             cache.put(event.request, responseToCache);
