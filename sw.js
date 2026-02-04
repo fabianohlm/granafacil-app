@@ -1,11 +1,11 @@
 
-const CACHE_NAME = 'financas-v2';
+const CACHE_NAME = 'financas-v3';
 const STATIC_ASSETS = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/icon-192.svg',
-  '/icon-512.svg'
+  './',
+  './index.html',
+  './manifest.json',
+  './icon-192.svg',
+  './icon-512.svg'
 ];
 
 // Install Event: Cache critical static assets immediately
@@ -64,7 +64,6 @@ self.addEventListener('fetch', (event) => {
           }
 
           // Clone response to store in cache
-          // This ensures external dependencies (like CDN scripts) are cached for offline use
           const responseToCache = response.clone();
           caches.open(CACHE_NAME).then((cache) => {
             cache.put(event.request, responseToCache);
@@ -75,7 +74,7 @@ self.addEventListener('fetch', (event) => {
         .catch(() => {
           // Offline fallback for navigation (HTML)
           if (event.request.mode === 'navigate') {
-            return caches.match('/index.html');
+            return caches.match('./index.html');
           }
         });
     })
